@@ -5,12 +5,15 @@ namespace programTest
     [TestClass]
     public class UnitTest1
     {
+        /// <summary>
+        /// This Test case ensure AnalyseMood() method will return when SAD when message contains Sad
+        /// </summary>
         [TestMethod]
         public void GivenSadMessage_WhenSad_ShouldReturnSAD()
         {
             //Arrange
             string Expected = "SAD";
-            Program program= new Program("I am in Sad Mood");
+            Program program = new Program("I am in Sad Mood");
             //Act
             string result = program.AnalyseMood();
             //Assert
@@ -25,7 +28,7 @@ namespace programTest
         {
             //Arrange
             string Expected = "HAPPY";
-            Program program= new Program("I am in Happy Mood");
+            Program program = new Program("I am in Happy Mood");
             //Act
             string result = program.AnalyseMood();
             //Assert
@@ -40,7 +43,7 @@ namespace programTest
         {
             //Arrange
             string Expected = "HAPPY";
-            Program program= new Program("I am in Any Mood");
+            Program program = new Program("I am in Any Mood");
             //Act
             string result = program.AnalyseMood();
             //Assert
@@ -48,7 +51,7 @@ namespace programTest
         }
 
         /// <summary>
-        /// This Test case ensure AnalyseMood() method will return when HAPPY when Any mood message is given
+        /// This Test case ensure AnalyseMood() method will return when HAPPY when Null mood message is given
         /// </summary>
         [TestMethod]
         [DataRow("null")]
@@ -56,12 +59,33 @@ namespace programTest
         {
             //Arrange
             string Expected = "Happy";
-            Program program = new Program(message);
+            Program moodAnalyser = new Program(message);
             //Act
-            string result = program.AnalyseMood();
+            string result = moodAnalyser.AnalyseMood();
             //Assert
             Assert.AreEqual(Expected, result);
         }
 
+        /// <summary>
+        /// This Test case ensure when given empty message will throw an exception
+        /// </summary>
+        [TestMethod]
+        [DataRow("")]
+        public void GivenEmptyMessage_WhenEmpty_ShouldThrowException(string message)
+        {
+            try
+            {
+                //Arrange
+                Program program = new Program(message);
+                //Act
+                string result = program.AnalyseMood();
+                //Assert
+            }
+            catch (MoodAnalyserException e)
+            {
+                Assert.AreEqual("Mood should not be empty", e.Message);
+            }
+
+        }
     }
 }

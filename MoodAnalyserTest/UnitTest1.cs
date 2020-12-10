@@ -5,34 +5,62 @@ namespace programTest
     [TestClass]
     public class UnitTest1
     {
-        private readonly Program program;
-        public UnitTest1()
-        {
-            program = new Program();
-        }
         [TestMethod]
-        public void givenMood_WhenHappy_ShouldReturnHappyMood()
+        public void GivenSadMessage_WhenSad_ShouldReturnSAD()
         {
-            var result = program.AnalyseMood("Happy");
-            Assert.AreEqual("Happy mood", result);
+            //Arrange
+            string Expected = "SAD";
+            Program program= new Program("I am in Sad Mood");
+            //Act
+            string result = program.AnalyseMood();
+            //Assert
+            Assert.AreEqual(Expected, result);
         }
+
+        /// <summary>
+        /// This Test case ensure AnalyseMood() method will return when HAPPY when message contains Happy
+        /// </summary>
         [TestMethod]
-        public void givenMood_WhenSad_ShouldReturnSadMood()
+        public void GivenHappyMessage_WhenAnyMood_ShouldReturnHAPPY()
         {
-            var result = program.AnalyseMood("Sad");
-            Assert.AreEqual("Sad mood", result);
+            //Arrange
+            string Expected = "HAPPY";
+            Program program= new Program("I am in Happy Mood");
+            //Act
+            string result = program.AnalyseMood();
+            //Assert
+            Assert.AreEqual(Expected, result);
         }
+
+        /// <summary>
+        /// This Test case ensure AnalyseMood() method will return when HAPPY when Any mood message is given
+        /// </summary>
         [TestMethod]
-        public void givenSadMessage_WhenSad_ShouldReturnSAD()
+        public void GivenAnyMessage_WhenAnyMood_ShouldReturnHAPPY()
         {
-            var result = program.AnalyseMood("I am in Sad Mood");
-            Assert.AreEqual("SAD", result);
+            //Arrange
+            string Expected = "HAPPY";
+            Program program= new Program("I am in Any Mood");
+            //Act
+            string result = program.AnalyseMood();
+            //Assert
+            Assert.AreEqual(Expected, result);
         }
+
+        /// <summary>
+        /// This Test case ensure AnalyseMood() method will return when HAPPY when Any mood message is given
+        /// </summary>
         [TestMethod]
-        public void givenAnyMessage_WhenAnyMood_ShouldReturnHAPPY()
+        [DataRow("null")]
+        public void GivenNULLMessage_WhenANULL_ShouldReturnHAPPY(string message)
         {
-            var result = program.AnalyseMood("I am in Any Mood");
-            Assert.AreEqual("HAPPY", result);
+            //Arrange
+            string Expected = "Happy";
+            Program program = new Program(message);
+            //Act
+            string result = program.AnalyseMood();
+            //Assert
+            Assert.AreEqual(Expected, result);
         }
 
     }

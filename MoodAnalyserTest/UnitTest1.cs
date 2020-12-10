@@ -85,7 +85,16 @@ namespace programTest
             {
                 Assert.AreEqual("Mood should not be empty", e.Message);
             }
-
+        }
+        /// <summary>
+        /// UC4-TC4.1 Proper class details are provided and expected to return the MoodAnalyser Object
+        /// </summary>
+        [TestMethod]
+        public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyserObject()
+        {
+            object expected = new Program();
+            object obj = MoodAnalyserFactory.CreateeMoodAnalyse("MoodAnalyserProject.MoodAnalyser", "MoodAnalyser");
+            expected.Equals(obj);
         }
     }
 }

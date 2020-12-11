@@ -5738,11 +5738,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NKS\\Desktop\\BridgLabzWork\\Dot Net\\MoodAnalyserApp\\MoodAnalyserTest\\MoodAnalyserTest.csproj",
+      "projectUniqueName": "C:\\Users\\NKS\\Desktop\\CSharp Git problems\\MoodAnalyser_CSharp\\MoodAnalyserTest\\MoodAnalyserTest.csproj",
       "projectName": "MoodAnalyserTest",
-      "projectPath": "C:\\Users\\NKS\\Desktop\\BridgLabzWork\\Dot Net\\MoodAnalyserApp\\MoodAnalyserTest\\MoodAnalyserTest.csproj",
+      "projectPath": "C:\\Users\\NKS\\Desktop\\CSharp Git problems\\MoodAnalyser_CSharp\\MoodAnalyserTest\\MoodAnalyserTest.csproj",
       "packagesPath": "C:\\Users\\NKS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NKS\\Desktop\\BridgLabzWork\\Dot Net\\MoodAnalyserApp\\MoodAnalyserTest\\obj\\",
+      "outputPath": "C:\\Users\\NKS\\Desktop\\CSharp Git problems\\MoodAnalyser_CSharp\\MoodAnalyserTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NKS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5759,8 +5759,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\NKS\\Desktop\\BridgLabzWork\\Dot Net\\MoodAnalyserApp\\MoodAnalyserApp\\MoodAnalyserApp.csproj": {
-              "projectPath": "C:\\Users\\NKS\\Desktop\\BridgLabzWork\\Dot Net\\MoodAnalyserApp\\MoodAnalyserApp\\MoodAnalyserApp.csproj"
+            "C:\\Users\\NKS\\Desktop\\CSharp Git problems\\MoodAnalyser_CSharp\\MoodAnalyserApp\\MoodAnalyserApp.csproj": {
+              "projectPath": "C:\\Users\\NKS\\Desktop\\CSharp Git problems\\MoodAnalyser_CSharp\\MoodAnalyserApp\\MoodAnalyserApp.csproj"
             }
           }
         }

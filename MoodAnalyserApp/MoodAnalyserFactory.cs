@@ -30,6 +30,13 @@ namespace MoodAnalyserApp
                 throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.NO_SUCH_METHOD, "Constructor is Not Found");
             }
         }
+        /// <summary>
+        /// CreatMoodAnalser method to creat object of MoodAnalyser
+        /// </summary>
+        /// <param name="className"></param>
+        /// <param name="constructorName"></param>
+        /// <param name="message"></param>
+        /// <returns></returns>
         public static object CreateMoodAnalyserUsingParameterizedConstructor(string className, string constructorName, string message)
         {
             Type type = typeof(Program);
@@ -49,6 +56,46 @@ namespace MoodAnalyserApp
             else
             {
                 throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.NO_SUBH_CLASS, "Class Not Found ");
+            }
+        }
+        public static string InvokeAnalyseMood(string message, string methodName)
+        {
+            try
+            {
+                Type type = Type.GetType("MoodAnalyserApp.Program");
+                object moodAnalyserObject = MoodAnalyserFactory.CreateMoodAnalyserUsingParameterizedConstructor("MoodAnalyserApp.Program", "Program", message);
+                MethodInfo AnalseMoodInfo = type.GetMethod(methodName);
+                object mood = AnalseMoodInfo.Invoke(moodAnalyserObject, null);
+                return mood.ToString();
+            }
+            catch (NullReferenceException)
+            {
+                throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.NO_SUCH_METHOD, "Method is Not Found");
+            }
+        }
+        /// <summary>
+        /// Function to set the Field Dynamically using Reflection
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="fieldName"></param>
+        /// <returns></returns>
+        public static string SetField(string message, string fieldName)
+        {
+            try
+            {
+                Program program = new Program();
+                Type type = typeof(Program);
+                FieldInfo field = type.GetField(fieldName, BindingFlags.Public | BindingFlags.Instance);
+                if (message == null)
+                {
+                    throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.NO_SUCH_FIELD, "Message should not be null");
+                }
+                field.SetValue(program, message);
+                return program.message;
+            }
+            catch (NullReferenceException)
+            {
+                throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.NO_SUCH_FIELD, "Field is Not Found");
             }
         }
     }

@@ -77,12 +77,34 @@ namespace programTest
             object obj = MoodAnalyserFactory.CreateMoodAnalyse("MoodAnalyserApp.Program", "Program");
             expected.Equals(obj);
         }
+        /// <summary>
+        /// UC5-TC5.1 Proper message are provided to parameterized constructor and expected to return the MoodAnalyser Object
+        /// </summary>
         [TestMethod]
         public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyserObject_UsingParameterizdConstructor()
         {
             object expected = new Program("HAPPY");
             object obj = MoodAnalyserFactory.CreateMoodAnalyserUsingParameterizedConstructor("MoodAnalyserApp.Program", "Program", "HAPPY");
             expected.Equals(obj);
+        }
+        /// <summary>
+        /// UC6-TC6-1 Given Happy Should Return Happy.
+        /// </summary>
+        [TestMethod]
+        public void GiveHappyMoodShouldReturnHappy()
+        {
+            string expected = "HAPPY";
+            string mood = MoodAnalyserFactory.InvokeAnalyseMood("Happy", "AnalyseMood");
+            Assert.AreEqual(expected, mood);
+        }
+        /// <summary>
+        /// UC7-TC7.1 Given Happy Should Return Happy
+        /// </summary>
+        [TestMethod]
+        public void Given_HAPPYMessag_WithReflector_should_ReturnHAPPY()
+        {
+            string result = MoodAnalyserFactory.SetField("HAPPY", "message");
+            Assert.AreEqual("HAPPY", result);
         }
     }
 }

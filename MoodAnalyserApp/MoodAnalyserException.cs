@@ -15,7 +15,6 @@ namespace MoodAnalyserApp
             NO_SUBH_CLASS,
             OBJECT_CREATION_ISSUE
         }
-
         private readonly ExceptionType type;
         public MoodAnalyserException(ExceptionType type, String message) : base(message)
         {

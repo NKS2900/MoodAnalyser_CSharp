@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NKS\\Desktop\\BridgLabzWork\\Dot Net\\MoodAnalyserApp\\MoodAnalyserApp\\MoodAnalyserApp.csproj",
+      "projectUniqueName": "C:\\Users\\NKS\\Desktop\\CSharp Git problems\\MoodAnalyser_CSharp\\MoodAnalyserApp\\MoodAnalyserApp.csproj",
       "projectName": "MoodAnalyserApp",
-      "projectPath": "C:\\Users\\NKS\\Desktop\\BridgLabzWork\\Dot Net\\MoodAnalyserApp\\MoodAnalyserApp\\MoodAnalyserApp.csproj",
+      "projectPath": "C:\\Users\\NKS\\Desktop\\CSharp Git problems\\MoodAnalyser_CSharp\\MoodAnalyserApp\\MoodAnalyserApp.csproj",
       "packagesPath": "C:\\Users\\NKS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NKS\\Desktop\\BridgLabzWork\\Dot Net\\MoodAnalyserApp\\MoodAnalyserApp\\obj\\",
+      "outputPath": "C:\\Users\\NKS\\Desktop\\CSharp Git problems\\MoodAnalyser_CSharp\\MoodAnalyserApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NKS\\AppData\\Roaming\\NuGet\\NuGet.Config",

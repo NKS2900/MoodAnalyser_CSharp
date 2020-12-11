@@ -11,3 +11,16 @@ C:\Users\NKS\Desktop\BridgLabzWork\Dot Net\MoodAnalyserApp\MoodAnalyserApp\obj\D
 C:\Users\NKS\Desktop\BridgLabzWork\Dot Net\MoodAnalyserApp\MoodAnalyserApp\obj\Debug\netcoreapp3.1\MoodAnalyserApp.dll
 C:\Users\NKS\Desktop\BridgLabzWork\Dot Net\MoodAnalyserApp\MoodAnalyserApp\obj\Debug\netcoreapp3.1\MoodAnalyserApp.pdb
 C:\Users\NKS\Desktop\BridgLabzWork\Dot Net\MoodAnalyserApp\MoodAnalyserApp\obj\Debug\netcoreapp3.1\MoodAnalyserApp.genruntimeconfig.cache
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\bin\Debug\netcoreapp3.1\MoodAnalyserApp.exe
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\bin\Debug\netcoreapp3.1\MoodAnalyserApp.deps.json
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\bin\Debug\netcoreapp3.1\MoodAnalyserApp.runtimeconfig.json
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\bin\Debug\netcoreapp3.1\MoodAnalyserApp.runtimeconfig.dev.json
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\bin\Debug\netcoreapp3.1\MoodAnalyserApp.dll
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\bin\Debug\netcoreapp3.1\MoodAnalyserApp.pdb
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\obj\Debug\netcoreapp3.1\MoodAnalyserApp.csprojAssemblyReference.cache
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\obj\Debug\netcoreapp3.1\MoodAnalyserApp.AssemblyInfoInputs.cache
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\obj\Debug\netcoreapp3.1\MoodAnalyserApp.AssemblyInfo.cs
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\obj\Debug\netcoreapp3.1\MoodAnalyserApp.csproj.CoreCompileInputs.cache
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\obj\Debug\netcoreapp3.1\MoodAnalyserApp.dll
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\obj\Debug\netcoreapp3.1\MoodAnalyserApp.pdb
+C:\Users\NKS\Desktop\CSharp Git problems\MoodAnalyser_CSharp\MoodAnalyserApp\obj\Debug\netcoreapp3.1\MoodAnalyserApp.genruntimeconfig.cache

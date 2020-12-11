@@ -84,5 +84,15 @@ namespace programTest
             object obj = MoodAnalyserFactory.CreateMoodAnalyserUsingParameterizedConstructor("MoodAnalyserApp.Program", "Program", "HAPPY");
             expected.Equals(obj);
         }
+        /// <summary>
+        /// UC6-TC6-1 Given Happy Should Return Happy.
+        /// </summary>
+        [TestMethod]
+        public void GiveHappyMoodShouldReturnHappy()
+        {
+            string expected = "HAPPY";
+            string mood = MoodAnalyserFactory.InvokeAnalyseMood("Happy", "AnalyseMood");
+            Assert.AreEqual(expected, mood);
+        }
     }
 }
